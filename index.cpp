@@ -130,3 +130,43 @@ int main() {
     return 0;
 
 }
+
+🚩 Golden Rules for MCQs
+Array name = constant pointer, can’t be incremented.
+
+Pointer = variable, can move around.
+
+Printing int* → address, printing char* → string.
+
+(*p)++ vs *p++ — always check brackets.
+
+sizeof(arr) ≠ sizeof(ptr).
+
+Null pointer is okay until you dereference it.
+
+Double pointer (int **pp) = stores address of a pointer.
+
+
+	🎯 Summary of Key Fixes
+
+Null pointer → compile OK, runtime crash if dereferenced.
+
+(arr+1) is valid → pointer arithmetic.
+
+p[i] works like arr[i].
+
+char behaves like int → increment works.
+
+Printing char* → string, not address.
+
+Incrementing char* works, shifts string.
+
+Double pointer modifies real variable correctly.
+
+
+
+
+
+
+
+
