@@ -79,6 +79,54 @@ int main() {
     
     cout<<"Sum  is"<<getSum(arr,5)<<endl;
     //iss tarike se jab aap array pass karte hon toh woh usko ek pointer ki tarah leta hai islye uska size8 hote hai.
+
+
+	//Double Pointer
+
+#include <bits/stdc++.h>
+using namespace std;
+void update(int **p2){
+    // p2 = p2+1;
+    //kuch change hoga?? - NO;
+    
+    // *p2= *p2 + 1;
+    // //kuch change hoga?? - yes;
+    
+    **p2 = **p2 + 1;
+    //kuch change hoga??--YES
+}
+
+int main() {
+	// your code goes here
+	int i = 45;
+	
+	int *p = &i;
+	int **p2 = &p;
+	
+// 	cout<<"printing p"<<p<<endl;
+// 	cout<<"address of p"<<&p<<endl;
+	
+	
+// 	cout<<*p2<<endl;
+	
+	cout<<"before"<<i<<endl;
+	cout<<"before"<<p<<endl;
+	cout<<"before"<<p2<<endl;
+	update(p2);
+	cout<<"after"<<i<<endl;
+	cout<<"after"<<p<<endl;
+	cout<<"after"<<p2<<endl;
+	cout<<endl<<endl;
+
+	
+	
+	
+	
+	return 0;
+	
+
+}
+
     return 0;
 
 }
